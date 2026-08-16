@@ -6,7 +6,7 @@ This is the official PyTorch implementation of **UniCast: A Universal Model for 
 **Key highlights of UniCast:**
 
 - 🌦️ **Semi-autoregressive Strategy**: UniCast employs a semi-autoregressive forecasting strategy that effectively reconciles the conflicting temporal demands between precipitation and upper-air variables.
-- 🎯 **Specialized Training Paradigm**: UniCast tailors training tasks to specific challenges—training a **generalist** for upper-air variables alongside a **specialist** for precipitation-specific predictions.
+- 🎯 **Specialized Training Paradigm**: UniCast tailors training tasks to specific challenges—training a **[generalist](https://github.com/Yumenomae/UniCast-A-Universal-Model-for-Multi-Lead-Time-and-Modality-Specific-Predictions/tree/main/Generalist)** for upper-air variables alongside a **[specialist](https://github.com/Yumenomae/UniCast-A-Universal-Model-for-Multi-Lead-Time-and-Modality-Specific-Predictions/tree/main/Specialist)** for precipitation-specific predictions.
 
 ---
 
