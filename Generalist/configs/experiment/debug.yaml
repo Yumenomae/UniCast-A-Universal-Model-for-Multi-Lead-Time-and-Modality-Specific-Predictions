@@ -1,0 +1,52 @@
+# @package _global_
+
+# to execute this experiment run:
+# python train.py experiment=example
+
+defaults:
+  - override /data: testing
+  - override /model: Stormer
+  - override /callbacks: default
+  - override /trainer: default
+
+# all parameters below will be merged with parameters from default configurations set above
+# this allows you to overwrite only specified parameters
+
+tags: ["testing"]
+
+seed: 12345
+
+trainer:
+  min_epochs: 1
+  max_epochs: 100
+  # gradient_clip_val: 0.5
+
+  strategy: ddp
+  accelerator: gpu
+  devices: 4
+  num_nodes: 1
+  sync_batchnorm: True
+
+  precision: 16
+
+model:
+  optimizer:
+    lr: 5e-4
+  net:
+    in_img_size: [128, 256]
+    patch_size: 2
+    hidden_size: 512
+    depth: 12
+    num_heads: 16
+    mlp_ratio: 4.0
+  compile: false
+
+data:
+  batch_size: 16
+
+logger:
+  wandb:
+    tags: ${tags}
+    group: "testing"
+  aim:
+    experiment: "testing"

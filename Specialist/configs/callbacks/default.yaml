@@ -1,0 +1,28 @@
+defaults:
+  - model_checkpoint
+  - early_stopping
+  - model_summary
+  - rich_progress_bar
+  - learning_rate_monitor
+  - _self_
+
+model_checkpoint:
+  dirpath: ${paths.output_dir}/checkpoints
+  filename: "epoch_{epoch:03d}"
+  monitor: None
+  mode: "min"
+  save_last: True
+  auto_insert_metric_name: False
+  verbose: False
+
+early_stopping:
+  monitor: None
+  patience: 10
+  mode: "min"
+  min_delta: 0.
+
+learning_rate_monitor:
+  logging_interval: 'step'
+  
+model_summary:
+  max_depth: -1
