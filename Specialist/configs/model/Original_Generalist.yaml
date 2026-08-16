@@ -1,4 +1,4 @@
-_target_: src.models.Ablation_Control.Vanilla_Himmel_dag_CorLoss.ModelInterface
+_target_: src.models.UniCast.Original_Generalist_wPhy_ACSLoss.ModelInterface
 
 warmup_epochs: 1
 max_epochs: 100
@@ -20,7 +20,7 @@ scheduler:
   _partial_: true
 
 finetuned_net:
-  _target_: src.models.components.Himmel_Swin.model.Himmel
+  _target_: src.models.components.UniCast.model.UniCast
   EmbedSet:
     _target_: src.data.components.embedding_dataset.EmbeddingDataset
     data_dir: '/home-ssd/Users/gm_lhy/zhengjq/Ours/data/embed'
