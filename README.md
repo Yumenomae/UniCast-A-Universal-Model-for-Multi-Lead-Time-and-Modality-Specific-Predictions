@@ -45,6 +45,6 @@ An official BibTeX citation will be posted here upon publication.
 
 In the meantime, if you find our code useful for your research, we recommend citing this repository directly as:
 
-> Zheng et al. (2026). UniCast: A Universal Model for Multi-Lead-Time and Modality-Specific Predictions (Version v1.0) [Source code]. GitHub. https://github.com/Yumenomae/UniCast-A-Universal-Model-for-Multi-Lead-Time-and-Modality-Specific-Predictions
+> Zheng et al. (2026). UniCast: A Universal Model for Multi-Lead-Time and Modality-Specific Predictions (Version v1.0) [Source code]. GitHub. https://github.com/Yumenomae/UniCast
 
 We will update this section with the official journal citation once available. Stay tuned!
